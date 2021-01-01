@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- 
+	Name: Liam Johnson
+	Date Created: 12/29/2020
+	Most Recent Revision:
+-->
+<html lang="en">
+	<main>
+		<head>
+			<title>Contact Us</title>
+		</head>
+		
+		<body>
+			<header>
+				<h1>Boat Brothers</h1>
+				<hr />
+			</header>
+			
+			<nav>
+			<p><a href="index.html">Home</a></p>
+			<p><a href="menu.html">Menu</a></p>
+			<p><a href="contact.html">Contact Us</a></p>
+			<hr />
+			</nav>
+			
+			<form action="submit.html" method="POST">
+				<label for="name">Name: </label>
+				<input type="text" id="name" name="name"><br />
+				<label for="email">Email: </label>
+				<input type="text" id="email" name="email"><br />
+				<label for="phone">Phone: </label>
+				<input type="text" id="phone" name="phone"><br />
+				<label for="reason">Reason for Inquiry: </label>
+				<select id="reason" name="reason">
+					<option value="default" selected>Catering</option>
+					<option value="party">Private Party</option>
+					<option value="feedback">Feedback</option>
+					<option value="other">Other</option>
+				</select><br />
+				<label for="info">Additional Information: </label>
+				<textarea id="info" name="info"></textarea><br />
+				<fieldset>
+					<legend>Have you been to the restaurant?</legend>
+					<input type="radio" id="choice1" name="visit" value="no">
+					<label for="choice1">No</label>
+					<input type="radio" id="choice2" name="visit" value="yes">
+					<label for="choice2">Yes</label>
+				</fieldset><br />
+				<fieldset>
+					<legend>Best days to contact you: </legend>
+					<input type="checkbox" id="mon" name="contact" value="mon">
+					<label for="mon">M</label>
+					<input type="checkbox" id="tue" name="contact" value="tue">
+					<label for="tue">T</label>
+					<input type="checkbox" id="wed" name="contact" value="wed">
+					<label for="wed">W</label>
+					<input type="checkbox" id="thu" name="contact" value="thu">
+					<label for="thu">Th</label>
+					<input type="checkbox" id="fri" name="contact" value="fri">
+					<label for="fri">F</label>
+				</fieldset>
+				<input type="submit" id="submit" value="Submit">
+			</form>
+			
+			<footer>
+			<hr />
+			<p>2542 64nd Avenue, Karrdowan, NK 46660</p>
+			<p>555-263-9394</p>
+			</footer>
+		</body>
+	<main>
+</html>
