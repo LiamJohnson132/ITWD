@@ -5,6 +5,43 @@
 	Most Recent Revision:
 -->
 <html lang="en">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<style>
+		table {
+			text-align: center;
+		}
+		td {
+			padding: 8px;
+			width: 350px;
+			vertical-align: top;
+		}
+		.menu {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		strong {
+			font-size: 1.1em;
+		}
+		table.bev {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		th {
+			border: 2px solid #000;
+		}
+		td.bev {
+			border: 2px solid #000;
+		}
+		table.bev {
+			border: 2px solid #000;
+			border-collapse: collapse;
+		}
+		tr:nth-child(odd).bev {
+			background-color: #c1bcb6;
+		}
+	</style>
 	<main>
 		<head>
 			<title>Menu</title>
@@ -12,90 +49,119 @@
 		
 		<body>
 			<header>
-				<h1>Boat Brothers</h1>
+				<h1 style="padding-top: 20px;">Boat Brothers</h1>
 				<hr />
+				<h5 style="text-align: right; margin-right: 4px;">This page requires JavaScript enabled in order to work properly</h5>
 			</header>
 			
-			<nav>
-			<p><a href="index.html">Home</a></p>
-			<p><a href="menu.html">Menu</a></p>
-			<p><a href="contact.html">Contact Us</a></p>
-			<hr />
-			</nav>
+			<ul class="nav nav-tabs">
+			  <li class="nav-item">
+				<a class="nav-link fas" href="index.html">&#xf015;</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="contact.html">Contact Me</a>
+			  </li>
+			</ul>
 			
-			<div id="menu">
-				<div id="burger">
-					<p>
-					<strong>Burger and Fries</strong><br />
-					An American Classic!<br />
-					Your choice - with or without cheese<br />
-					Pickle, onion, tomato, and lettuce<br />
-					Served with our famous thick cut french fries<br />
-					$7.95
-					</p>
-				</div>
-				
-				<div id="hot-dog">
-					<p>
-					<strong>Hot Dog and Chips</strong><br />
-					A Summer Classic!<br />
-					Your choice - a white or wheat bun<br />
-					Relish, mustard, and ketchup<br />
-					Served with our house-made chips<br />
-					$7.95
-					</p>
-				</div>
-				
-				<div id="it-sausage">
-					<p>
-					<strong>Italian Sausage and Peppers</strong><br />
-					An All-Time Favorite!<br />
-					Your choice - mild or spicy Cole Slaw<br />
-					Served with garlic mashers<br />
-					$10.95
-					</p>
-				</div>
-				
-				<div id="tend-sandwich">
-					<p>
-					<strong>Tenderloin Sandwich and Chips</strong><br />
-					Really Hits the Spot!<br />
-					Plain or Sesame Seed Bun<br />
-					Pickle, onion, tomato, and lettuce<br />
-					Served with our house-made chips<br />
-					$8.95
-					</p>
-				</div>
-				
-				<div id="salad">
-					<p>
-					<strong>House Salad</strong><br />
-					On the Lighter Side<br />
-					Your choice - with or without cheese<br />
-					Iceberg lettuce, tomatoes, peppers<br />
-					Thousand Island or Ranch Dressing<br />
-					Served with a dinner roll<br />
-					$6.95
-					</p>
-				</div>
-				
-				<div id="brisket">
-					<p>
-					<strong>Brisket Sandwich and Fries</strong><br />
-					A Taste of Texas!
-					Smoked brisket on thick-cut Texas Toast<br />
-					Cole Slaw<br />
-					Served with our famous thick-cut french fries<br />
-					$7.95
-					</p>
-				</div>
-			</div>
+			<table class="menu table">
+				<tbody>
+					<tr>
+						<td>
+						<strong>Burger and Fries</strong><br />
+						An American Classic!<br />
+						Your choice - with or without cheese<br />
+						Pickle, onion, tomato, and lettuce<br />
+						Served with our famous thick cut french fries<br />
+						$7.95
+						</td>
 			
+						<td>
+						<strong>Hot Dog and Chips</strong><br />
+						A Summer Classic!<br />
+						Your choice - a white or wheat bun<br />
+						Relish, mustard, and ketchup<br />
+						Served with our house-made chips<br />
+						$7.95
+						</td>
+						
+						<td>
+						<strong>Italian Sausage and Peppers</strong><br />
+						An All-Time Favorite!<br />
+						Your choice - mild or spicy Cole Slaw<br />
+						Served with garlic mashers<br />
+						$10.95
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<strong>Tenderloin Sandwich and Chips</strong><br />
+						Really Hits the Spot!<br />
+						Plain or Sesame Seed Bun<br />
+						Pickle, onion, tomato, and lettuce<br />
+						Served with our house-made chips<br />
+						$8.95
+						</td>
+				
+						<td>
+						<strong>House Salad</strong><br />
+						On the Lighter Side<br />
+						Your choice - with or without cheese<br />
+						Iceberg lettuce, tomatoes, peppers<br />
+						Thousand Island or Ranch Dressing<br />
+						Served with a dinner roll<br />
+						$6.95
+						</td>
+					
+						<td>
+						<strong>Brisket Sandwich and Fries</strong><br />
+						A Taste of Texas!
+						Smoked brisket on thick-cut Texas Toast<br />
+						Cole Slaw<br />
+						Served with our famous thick-cut french fries<br />
+						$7.95
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<table class="bev table" style="margin-bottom: 10%; max-width: 50%">
+				<thead class="bev">
+					<tr>
+						<th colspan="2">Beverages</th>
+					</tr>
+				</thead>
+				<tbody class="bev">
+					<tr  class="bev">
+						<td  class="bev">Root Beer</td>
+						<td  class="bev">$3.00</td>
+					</tr>
+					
+					<tr  class="bev">
+						<td  class="bev">Bottled Water</td>
+						<td  class="bev">$1.25</td>
+					</tr>
+					
+					<tr  class="bev">
+						<td  class="bev">Lemonade</td>
+						<td  class="bev">$1.00</td>
+					</tr>
+					
+					<tr  class="bev">
+						<td  class="bev">Iced Tea</td>
+						<td  class="bev">$1.25</td>
+					</tr>
+				</tbody>
+			</table>
+				
 			<footer>
 			<hr />
 			<p>2542 64nd Avenue, Karrdowan, NK 46660</p>
 			<p>555-263-9394</p>
 			</footer>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 		</body>
 	</main>
 </html>

@@ -1,0 +1,61 @@
+main {
+	font-family: georgia;
+	font-size: 18px;
+	color: #353535;
+}
+@font-face {
+	font-family: papyrus;
+	src: url(papyrus.ttf);
+}
+h1 {
+	font-family: papyrus;
+}
+footer {
+	text-align: center;
+}
+header {
+	text-align: center;
+	font-size: 1.8empx;
+	height: 100%;
+}
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+body {
+	background-color: #d8d2c9;
+	margin: 0;
+}
+header, footer {
+	background-color: #46b5b3;
+	margin: 0px;
+	padding: 0px;
+}
+footer {
+	height: 10em;
+}
+h1 {
+	margin: 0;
+}
+nav {
+	
+}
+nav a {
+	text-align: center;
+	background-color: #46b5b3;
+	height: 30px;
+	width: 120px;
+	float: left;
+	margin: 6px 24px;
+	border: 2px solid #353535;
+	color: #fff;
+}
+nav a:visited {
+	color: #353535;
+}
+nav a:hover {
+	font-weight: bold;
+}
+nav a:active {
+	text-decoration: none;
+}
